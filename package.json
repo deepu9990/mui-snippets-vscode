@@ -1,0 +1,111 @@
+{
+  "name": "mui-snippets-pro",
+  "displayName": "MUI Snippets Pro",
+  "description": "Complete collection of Material UI (MUI) code snippets with TypeScript support",
+  "version": "1.0.0",
+  "publisher": "deepu9990",
+  "author": {
+    "name": "Deepak Sharma",
+    "url": "https://github.com/deepu9990"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "mui",
+    "material-ui",
+    "react",
+    "typescript",
+    "snippets",
+    "components",
+    "ui",
+    "frontend",
+    "javascript",
+    "jsx",
+    "tsx"
+  ],
+  "galleryBanner": {
+    "color": "#1976d2",
+    "theme": "dark"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/mui-core-components.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/mui-core-components.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/mui-core-components.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/mui-core-components.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/mui-layout-patterns.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/mui-layout-patterns.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/mui-layout-patterns.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/mui-layout-patterns.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/mui-hooks-utils.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/mui-hooks-utils.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/mui-hooks-utils.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/mui-hooks-utils.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/mui-x-components.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/mui-x-components.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/mui-x-components.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/mui-x-components.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deepu9990/mui-snippets-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deepu9990/mui-snippets-vscode/issues"
+  },
+  "homepage": "https://github.com/deepu9990/mui-snippets-vscode#readme",
+  "license": "MIT"
+}

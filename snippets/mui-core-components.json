@@ -1,0 +1,676 @@
+{
+  "muiAlert": {
+    "prefix": ["muiAlert", "mui_alert", "muialert"],
+    "body": [
+      "import { Alert } from \"@mui/material\";",
+      "",
+      "<Alert severity=\"${1|info,warning,error,success|}\" ${2:onClose={() => {}}}>${3:Alert message}</Alert>"
+    ],
+    "description": "Material UI Alert component with severity and close action"
+  },
+  "muiAlertTitle": {
+    "prefix": ["muiAlertTitle", "mui_alert_title", "muialerttitle"],
+    "body": [
+      "import { Alert, AlertTitle } from \"@mui/material\";",
+      "",
+      "<Alert severity=\"${1|info,warning,error,success|}\">",
+      "  <AlertTitle>${2:Title}</AlertTitle>",
+      "  ${3:Alert message content}",
+      "</Alert>"
+    ],
+    "description": "Material UI Alert with AlertTitle"
+  },
+  "muiAutocomplete": {
+    "prefix": ["muiAutocomplete", "mui_autocomplete", "muiautocomplete"],
+    "body": [
+      "import { Autocomplete, TextField } from \"@mui/material\";",
+      "",
+      "<Autocomplete",
+      "  disablePortal",
+      "  options={${1:options}}",
+      "  sx={{ width: ${2:300} }}",
+      "  renderInput={(params) => <TextField {...params} label=\"${3:Label}\" />}",
+      "  onChange={(event, value) => {${4:// Handle change}}}",
+      "/>"
+    ],
+    "description": "Material UI Autocomplete with TextField"
+  },
+  "muiAvatar": {
+    "prefix": ["muiAvatar", "mui_avatar", "muiavatar"],
+    "body": [
+      "import { Avatar } from \"@mui/material\";",
+      "",
+      "<Avatar alt=\"${1:Name}\" src=\"${2:/path/to/image.jpg}\" sx={{ width: ${3:56}, height: ${4:56} }} />"
+    ],
+    "description": "Material UI Avatar component"
+  },
+  "muiAvatarGroup": {
+    "prefix": ["muiAvatarGroup", "mui_avatar_group", "muiavatargroup"],
+    "body": [
+      "import { Avatar, AvatarGroup } from \"@mui/material\";",
+      "",
+      "<AvatarGroup max={${1:4}}>",
+      "  <Avatar alt=\"${2:Name1}\" src=\"${3:/path/to/image1.jpg}\" />",
+      "  <Avatar alt=\"${4:Name2}\" src=\"${5:/path/to/image2.jpg}\" />",
+      "  <Avatar alt=\"${6:Name3}\" src=\"${7:/path/to/image3.jpg}\" />",
+      "</AvatarGroup>"
+    ],
+    "description": "Material UI AvatarGroup component"
+  },
+  "muiBadge": {
+    "prefix": ["muiBadge", "mui_badge", "muibadge"],
+    "body": [
+      "import { Badge } from \"@mui/material\";",
+      "",
+      "<Badge badgeContent={${1:4}} color=\"${2|primary,secondary,error,info,success,warning|}\">",
+      "  ${3:<!-- Content -->}",
+      "</Badge>"
+    ],
+    "description": "Material UI Badge component"
+  },
+  "muiBottomNavigation": {
+    "prefix": ["muiBottomNavigation", "mui_bottom_navigation", "muibottomnavigation"],
+    "body": [
+      "import { BottomNavigation, BottomNavigationAction } from \"@mui/material\";",
+      "import { Home, Favorite, LocationOn } from \"@mui/icons-material\";",
+      "",
+      "<BottomNavigation",
+      "  showLabels",
+      "  value={${1:value}}",
+      "  onChange={(event, newValue) => {",
+      "    ${2:setValue(newValue);}",
+      "  }}",
+      ">",
+      "  <BottomNavigationAction label=\"${3:Home}\" icon={<Home />} />",
+      "  <BottomNavigationAction label=\"${4:Favorites}\" icon={<Favorite />} />",
+      "  <BottomNavigationAction label=\"${5:Nearby}\" icon={<LocationOn />} />",
+      "</BottomNavigation>"
+    ],
+    "description": "Material UI BottomNavigation with actions"
+  },
+  "muiBreadcrumbs": {
+    "prefix": ["muiBreadcrumbs", "mui_breadcrumbs", "muibreadcrumbs"],
+    "body": [
+      "import { Breadcrumbs, Link, Typography } from \"@mui/material\";",
+      "",
+      "<Breadcrumbs aria-label=\"breadcrumb\">",
+      "  <Link underline=\"hover\" color=\"inherit\" href=\"${1:/}\">",
+      "    ${2:Home}",
+      "  </Link>",
+      "  <Link underline=\"hover\" color=\"inherit\" href=\"${3:/category}\">",
+      "    ${4:Category}",
+      "  </Link>",
+      "  <Typography color=\"text.primary\">${5:Current Page}</Typography>",
+      "</Breadcrumbs>"
+    ],
+    "description": "Material UI Breadcrumbs navigation"
+  },
+  "muiButton": {
+    "prefix": ["muiButton", "mui_button", "muibutton"],
+    "body": [
+      "import { Button } from \"@mui/material\";",
+      "",
+      "<Button",
+      "  variant=\"${1|text,contained,outlined|}\"",
+      "  color=\"${2|primary,secondary,error,info,success,warning|}\"",
+      "  size=\"${3|small,medium,large|}\"",
+      "  onClick={${4:() => handleClick()}}",
+      "  ${5:disabled={false}}",
+      ">",
+      "  ${6:Button Text}",
+      "</Button>"
+    ],
+    "description": "Material UI Button component with all props"
+  },
+  "muiButtonGroup": {
+    "prefix": ["muiButtonGroup", "mui_button_group", "muibuttongroup"],
+    "body": [
+      "import { ButtonGroup, Button } from \"@mui/material\";",
+      "",
+      "<ButtonGroup variant=\"${1|text,contained,outlined|}\" aria-label=\"${2:outlined button group}\">",
+      "  <Button onClick={${3:() => handleClick()}}>${4:One}</Button>",
+      "  <Button onClick={${5:() => handleClick()}}>${6:Two}</Button>",
+      "  <Button onClick={${7:() => handleClick()}}>${8:Three}</Button>",
+      "</ButtonGroup>"
+    ],
+    "description": "Material UI ButtonGroup component"
+  },
+  "muiCard": {
+    "prefix": ["muiCard", "mui_card", "muicard"],
+    "body": [
+      "import { Card, CardContent, CardActions, Button, Typography } from \"@mui/material\";",
+      "",
+      "<Card sx={{ maxWidth: ${1:345} }}>",
+      "  <CardContent>",
+      "    <Typography gutterBottom variant=\"h5\" component=\"div\">",
+      "      ${2:Card Title}",
+      "    </Typography>",
+      "    <Typography variant=\"body2\" color=\"text.secondary\">",
+      "      ${3:Card content goes here}",
+      "    </Typography>",
+      "  </CardContent>",
+      "  <CardActions>",
+      "    <Button size=\"small\">${4:Share}</Button>",
+      "    <Button size=\"small\">${5:Learn More}</Button>",
+      "  </CardActions>",
+      "</Card>"
+    ],
+    "description": "Material UI Card with content and actions"
+  },
+  "muiCardMedia": {
+    "prefix": ["muiCardMedia", "mui_card_media", "muicardmedia"],
+    "body": [
+      "import { Card, CardMedia, CardContent, Typography } from \"@mui/material\";",
+      "",
+      "<Card sx={{ maxWidth: ${1:345} }}>",
+      "  <CardMedia",
+      "    sx={{ height: ${2:140} }}",
+      "    image=\"${3:/path/to/image.jpg}\"",
+      "    title=\"${4:Image title}\"",
+      "  />",
+      "  <CardContent>",
+      "    <Typography gutterBottom variant=\"h5\" component=\"div\">",
+      "      ${5:Card Title}",
+      "    </Typography>",
+      "    <Typography variant=\"body2\" color=\"text.secondary\">",
+      "      ${6:Card description}",
+      "    </Typography>",
+      "  </CardContent>",
+      "</Card>"
+    ],
+    "description": "Material UI Card with CardMedia"
+  },
+  "muiCheckbox": {
+    "prefix": ["muiCheckbox", "mui_checkbox", "muicheckbox"],
+    "body": [
+      "import { Checkbox, FormControlLabel } from \"@mui/material\";",
+      "",
+      "<FormControlLabel",
+      "  control={",
+      "    <Checkbox",
+      "      checked={${1:checked}}",
+      "      onChange={${2:(event) => handleChange(event)}}",
+      "      name=\"${3:checkboxName}\"",
+      "      color=\"${4|primary,secondary,error,info,success,warning|}\"",
+      "    />",
+      "  }",
+      "  label=\"${5:Checkbox Label}\"",
+      "/>"
+    ],
+    "description": "Material UI Checkbox with FormControlLabel"
+  },
+  "muiChip": {
+    "prefix": ["muiChip", "mui_chip", "muichip"],
+    "body": [
+      "import { Chip } from \"@mui/material\";",
+      "",
+      "<Chip",
+      "  label=\"${1:Chip Label}\"",
+      "  variant=\"${2|filled,outlined|}\"",
+      "  color=\"${3|default,primary,secondary,error,info,success,warning|}\"",
+      "  size=\"${4|small,medium|}\"",
+      "  ${5:onDelete={() => {}}}",
+      "  ${6:onClick={() => {}}}",
+      "/>"
+    ],
+    "description": "Material UI Chip component"
+  },
+  "muiCircularProgress": {
+    "prefix": ["muiCircularProgress", "mui_circular_progress", "muicircularprogress"],
+    "body": [
+      "import { CircularProgress } from \"@mui/material\";",
+      "",
+      "<CircularProgress",
+      "  color=\"${1|primary,secondary,error,info,success,warning,inherit|}\"",
+      "  size={${2:40}}",
+      "  ${3:value={75}}",
+      "  ${4:variant=\"determinate\"}",
+      "/>"
+    ],
+    "description": "Material UI CircularProgress component"
+  },
+  "muiDialog": {
+    "prefix": ["muiDialog", "mui_dialog", "muidialog"],
+    "body": [
+      "import { Dialog, DialogTitle, DialogContent, DialogActions, Button, DialogContentText } from \"@mui/material\";",
+      "",
+      "<Dialog",
+      "  open={${1:open}}",
+      "  onClose={${2:handleClose}}",
+      "  aria-labelledby=\"${3:alert-dialog-title}\"",
+      "  aria-describedby=\"${4:alert-dialog-description}\"",
+      ">",
+      "  <DialogTitle id=\"${3:alert-dialog-title}\">",
+      "    ${5:Dialog Title}",
+      "  </DialogTitle>",
+      "  <DialogContent>",
+      "    <DialogContentText id=\"${4:alert-dialog-description}\">",
+      "      ${6:Dialog content goes here}",
+      "    </DialogContentText>",
+      "  </DialogContent>",
+      "  <DialogActions>",
+      "    <Button onClick={${2:handleClose}}>${7:Cancel}</Button>",
+      "    <Button onClick={${8:handleConfirm}} autoFocus>",
+      "      ${9:Confirm}",
+      "    </Button>",
+      "  </DialogActions>",
+      "</Dialog>"
+    ],
+    "description": "Material UI Dialog with title, content and actions"
+  },
+  "muiDivider": {
+    "prefix": ["muiDivider", "mui_divider", "muidivider"],
+    "body": [
+      "import { Divider } from \"@mui/material\";",
+      "",
+      "<Divider ${1:variant=\"middle\"} ${2:orientation=\"horizontal\"} ${3:flexItem} />"
+    ],
+    "description": "Material UI Divider component"
+  },
+  "muiDrawer": {
+    "prefix": ["muiDrawer", "mui_drawer", "muidrawer"],
+    "body": [
+      "import { Drawer, List, ListItem, ListItemButton, ListItemText } from \"@mui/material\";",
+      "",
+      "<Drawer",
+      "  anchor=\"${1|left,right,top,bottom|}\"",
+      "  open={${2:open}}",
+      "  onClose={${3:toggleDrawer(false)}}",
+      ">",
+      "  <List sx={{ width: ${4:250} }}>",
+      "    {${5:['Item 1', 'Item 2', 'Item 3']}.map((text, index) => (",
+      "      <ListItem key={text} disablePadding>",
+      "        <ListItemButton>",
+      "          <ListItemText primary={text} />",
+      "        </ListItemButton>",
+      "      </ListItem>",
+      "    ))}",
+      "  </List>",
+      "</Drawer>"
+    ],
+    "description": "Material UI Drawer with list items"
+  },
+  "muiFab": {
+    "prefix": ["muiFab", "mui_fab", "muifab"],
+    "body": [
+      "import { Fab } from \"@mui/material\";",
+      "import { Add } from \"@mui/icons-material\";",
+      "",
+      "<Fab",
+      "  color=\"${1|primary,secondary,error,info,success,warning|}\"",
+      "  aria-label=\"${2:add}\"",
+      "  size=\"${3|small,medium,large|}\"",
+      "  onClick={${4:() => handleClick()}}",
+      ">",
+      "  <Add />",
+      "</Fab>"
+    ],
+    "description": "Material UI Floating Action Button"
+  },
+  "muiFormControl": {
+    "prefix": ["muiFormControl", "mui_form_control", "muiformcontrol"],
+    "body": [
+      "import { FormControl, InputLabel, Select, MenuItem } from \"@mui/material\";",
+      "",
+      "<FormControl fullWidth>",
+      "  <InputLabel id=\"${1:select-label}\">${2:Label}</InputLabel>",
+      "  <Select",
+      "    labelId=\"${1:select-label}\"",
+      "    id=\"${3:select}\"",
+      "    value={${4:value}}",
+      "    label=\"${2:Label}\"",
+      "    onChange={${5:handleChange}}",
+      "  >",
+      "    <MenuItem value={${6:10}}>${7:Option 1}</MenuItem>",
+      "    <MenuItem value={${8:20}}>${9:Option 2}</MenuItem>",
+      "    <MenuItem value={${10:30}}>${11:Option 3}</MenuItem>",
+      "  </Select>",
+      "</FormControl>"
+    ],
+    "description": "Material UI FormControl with Select"
+  },
+  "muiGrid": {
+    "prefix": ["muiGrid", "mui_grid", "muigrid"],
+    "body": [
+      "import { Grid } from \"@mui/material\";",
+      "",
+      "<Grid container spacing={${1:2}}>",
+      "  <Grid item xs={${2:12}} sm={${3:6}} md={${4:4}}>",
+      "    ${5:<!-- Content 1 -->}",
+      "  </Grid>",
+      "  <Grid item xs={${6:12}} sm={${7:6}} md={${8:4}}>",
+      "    ${9:<!-- Content 2 -->}",
+      "  </Grid>",
+      "  <Grid item xs={${10:12}} sm={${11:6}} md={${12:4}}>",
+      "    ${13:<!-- Content 3 -->}",
+      "  </Grid>",
+      "</Grid>"
+    ],
+    "description": "Material UI Grid container and items"
+  },
+  "muiIconButton": {
+    "prefix": ["muiIconButton", "mui_icon_button", "muiiconbutton"],
+    "body": [
+      "import { IconButton } from \"@mui/material\";",
+      "import { ${1:Favorite} } from \"@mui/icons-material\";",
+      "",
+      "<IconButton",
+      "  aria-label=\"${2:favorite}\"",
+      "  color=\"${3|default,inherit,primary,secondary,error,info,success,warning|}\"",
+      "  size=\"${4|small,medium,large|}\"",
+      "  onClick={${5:() => handleClick()}}",
+      ">",
+      "  <${1:Favorite} />",
+      "</IconButton>"
+    ],
+    "description": "Material UI IconButton component"
+  },
+  "muiLinearProgress": {
+    "prefix": ["muiLinearProgress", "mui_linear_progress", "muilinearprogress"],
+    "body": [
+      "import { LinearProgress } from \"@mui/material\";",
+      "",
+      "<LinearProgress",
+      "  variant=\"${1|determinate,indeterminate,buffer,query|}\"",
+      "  value={${2:75}}",
+      "  color=\"${3|primary,secondary,error,info,success,warning,inherit|}\"",
+      "  sx={{ width: '${4:100%}' }}",
+      "/>"
+    ],
+    "description": "Material UI LinearProgress component"
+  },
+  "muiList": {
+    "prefix": ["muiList", "mui_list", "muilist"],
+    "body": [
+      "import { List, ListItem, ListItemButton, ListItemIcon, ListItemText } from \"@mui/material\";",
+      "import { Inbox, Drafts } from \"@mui/icons-material\";",
+      "",
+      "<List>",
+      "  <ListItem disablePadding>",
+      "    <ListItemButton>",
+      "      <ListItemIcon>",
+      "        <Inbox />",
+      "      </ListItemIcon>",
+      "      <ListItemText primary=\"${1:Inbox}\" />",
+      "    </ListItemButton>",
+      "  </ListItem>",
+      "  <ListItem disablePadding>",
+      "    <ListItemButton>",
+      "      <ListItemIcon>",
+      "        <Drafts />",
+      "      </ListItemIcon>",
+      "      <ListItemText primary=\"${2:Drafts}\" />",
+      "    </ListItemButton>",
+      "  </ListItem>",
+      "</List>"
+    ],
+    "description": "Material UI List with icons and text"
+  },
+  "muiMenu": {
+    "prefix": ["muiMenu", "mui_menu", "muimenu"],
+    "body": [
+      "import { Menu, MenuItem } from \"@mui/material\";",
+      "",
+      "<Menu",
+      "  id=\"${1:basic-menu}\"",
+      "  anchorEl={${2:anchorEl}}",
+      "  open={${3:open}}",
+      "  onClose={${4:handleClose}}",
+      "  MenuListProps={{",
+      "    'aria-labelledby': '${5:basic-button}',",
+      "  }}",
+      ">",
+      "  <MenuItem onClick={${4:handleClose}}>${6:Profile}</MenuItem>",
+      "  <MenuItem onClick={${4:handleClose}}>${7:My account}</MenuItem>",
+      "  <MenuItem onClick={${4:handleClose}}>${8:Logout}</MenuItem>",
+      "</Menu>"
+    ],
+    "description": "Material UI Menu with MenuItems"
+  },
+  "muiPagination": {
+    "prefix": ["muiPagination", "mui_pagination", "muipagination"],
+    "body": [
+      "import { Pagination } from \"@mui/material\";",
+      "",
+      "<Pagination",
+      "  count={${1:10}}",
+      "  page={${2:page}}",
+      "  onChange={${3:handleChange}}",
+      "  color=\"${4|primary,secondary,standard|}\"",
+      "  size=\"${5|small,medium,large|}\"",
+      "  variant=\"${6|text,outlined|}\"",
+      "  showFirstButton",
+      "  showLastButton",
+      "/>"
+    ],
+    "description": "Material UI Pagination component"
+  },
+  "muiRadio": {
+    "prefix": ["muiRadio", "mui_radio", "muiradio"],
+    "body": [
+      "import { Radio, RadioGroup, FormControlLabel, FormControl, FormLabel } from \"@mui/material\";",
+      "",
+      "<FormControl>",
+      "  <FormLabel id=\"${1:radio-buttons-group-label}\">${2:Label}</FormLabel>",
+      "  <RadioGroup",
+      "    aria-labelledby=\"${1:radio-buttons-group-label}\"",
+      "    value={${3:value}}",
+      "    onChange={${4:handleChange}}",
+      "    name=\"${5:radio-buttons-group}\"",
+      "  >",
+      "    <FormControlLabel value=\"${6:option1}\" control={<Radio />} label=\"${7:Option 1}\" />",
+      "    <FormControlLabel value=\"${8:option2}\" control={<Radio />} label=\"${9:Option 2}\" />",
+      "    <FormControlLabel value=\"${10:option3}\" control={<Radio />} label=\"${11:Option 3}\" />",
+      "  </RadioGroup>",
+      "</FormControl>"
+    ],
+    "description": "Material UI Radio with RadioGroup"
+  },
+  "muiRating": {
+    "prefix": ["muiRating", "mui_rating", "muirating"],
+    "body": [
+      "import { Rating } from \"@mui/material\";",
+      "",
+      "<Rating",
+      "  name=\"${1:simple-controlled}\"",
+      "  value={${2:value}}",
+      "  onChange={(event, newValue) => {",
+      "    ${3:setValue(newValue);}",
+      "  }}",
+      "  size=\"${4|small,medium,large|}\"",
+      "  precision={${5:0.5}}",
+      "  readOnly={${6:false}}",
+      "/>"
+    ],
+    "description": "Material UI Rating component"
+  },
+  "muiSelect": {
+    "prefix": ["muiSelect", "mui_select", "muiselect"],
+    "body": [
+      "import { Select, MenuItem, FormControl, InputLabel } from \"@mui/material\";",
+      "",
+      "<FormControl fullWidth>",
+      "  <InputLabel id=\"${1:select-label}\">${2:Label}</InputLabel>",
+      "  <Select",
+      "    labelId=\"${1:select-label}\"",
+      "    id=\"${3:select}\"",
+      "    value={${4:value}}",
+      "    label=\"${2:Label}\"",
+      "    onChange={${5:handleChange}}",
+      "  >",
+      "    <MenuItem value={${6:10}}>${7:Option 1}</MenuItem>",
+      "    <MenuItem value={${8:20}}>${9:Option 2}</MenuItem>",
+      "    <MenuItem value={${10:30}}>${11:Option 3}</MenuItem>",
+      "  </Select>",
+      "</FormControl>"
+    ],
+    "description": "Material UI Select with options"
+  },
+  "muiSkeleton": {
+    "prefix": ["muiSkeleton", "mui_skeleton", "muiskeleton"],
+    "body": [
+      "import { Skeleton } from \"@mui/material\";",
+      "",
+      "<Skeleton",
+      "  variant=\"${1|text,circular,rectangular,rounded|}\"",
+      "  width={${2:210}}",
+      "  height={${3:60}}",
+      "  animation=\"${4|pulse,wave,false|}\"",
+      "/>"
+    ],
+    "description": "Material UI Skeleton loading component"
+  },
+  "muiSlider": {
+    "prefix": ["muiSlider", "mui_slider", "muislider"],
+    "body": [
+      "import { Slider } from \"@mui/material\";",
+      "",
+      "<Slider",
+      "  aria-label=\"${1:Volume}\"",
+      "  value={${2:value}}",
+      "  onChange={${3:handleChange}}",
+      "  valueLabelDisplay=\"${4|auto,on,off|}\"",
+      "  step={${5:10}}",
+      "  marks",
+      "  min={${6:0}}",
+      "  max={${7:100}}",
+      "  color=\"${8|primary,secondary,error,info,success,warning|}\"",
+      "/>"
+    ],
+    "description": "Material UI Slider component"
+  },
+  "muiSnackbar": {
+    "prefix": ["muiSnackbar", "mui_snackbar", "muisnackbar"],
+    "body": [
+      "import { Snackbar, Alert } from \"@mui/material\";",
+      "",
+      "<Snackbar",
+      "  open={${1:open}}",
+      "  autoHideDuration={${2:6000}}",
+      "  onClose={${3:handleClose}}",
+      "  anchorOrigin={{ vertical: '${4|top,bottom|}', horizontal: '${5|left,center,right|}' }}",
+      ">",
+      "  <Alert onClose={${3:handleClose}} severity=\"${6|success,info,warning,error|}\" sx={{ width: '100%' }}>",
+      "    ${7:This is a success message!}",
+      "  </Alert>",
+      "</Snackbar>"
+    ],
+    "description": "Material UI Snackbar with Alert"
+  },
+  "muiSwitch": {
+    "prefix": ["muiSwitch", "mui_switch", "muiswitch"],
+    "body": [
+      "import { Switch, FormControlLabel } from \"@mui/material\";",
+      "",
+      "<FormControlLabel",
+      "  control={",
+      "    <Switch",
+      "      checked={${1:checked}}",
+      "      onChange={${2:handleChange}}",
+      "      name=\"${3:switchName}\"",
+      "      color=\"${4|primary,secondary,error,info,success,warning|}\"",
+      "    />",
+      "  }",
+      "  label=\"${5:Switch Label}\"",
+      "/>"
+    ],
+    "description": "Material UI Switch with FormControlLabel"
+  },
+  "muiTabs": {
+    "prefix": ["muiTabs", "mui_tabs", "muitabs"],
+    "body": [
+      "import { Tabs, Tab, Box } from \"@mui/material\";",
+      "",
+      "<Box sx={{ width: '100%' }}>",
+      "  <Tabs",
+      "    value={${1:value}}",
+      "    onChange={${2:handleChange}}",
+      "    aria-label=\"${3:basic tabs example}\"",
+      "    variant=\"${4|standard,scrollable,fullWidth|}\"",
+      "    centered={${5:false}}",
+      "  >",
+      "    <Tab label=\"${6:Item One}\" />",
+      "    <Tab label=\"${7:Item Two}\" />",
+      "    <Tab label=\"${8:Item Three}\" />",
+      "  </Tabs>",
+      "</Box>"
+    ],
+    "description": "Material UI Tabs component"
+  },
+  "muiTextField": {
+    "prefix": ["muiTextField", "mui_text_field", "muitextfield"],
+    "body": [
+      "import { TextField } from \"@mui/material\";",
+      "",
+      "<TextField",
+      "  id=\"${1:outlined-basic}\"",
+      "  label=\"${2:Label}\"",
+      "  variant=\"${3|outlined,filled,standard|}\"",
+      "  value={${4:value}}",
+      "  onChange={${5:handleChange}}",
+      "  fullWidth={${6:true}}",
+      "  margin=\"${7|none,dense,normal|}\"",
+      "  size=\"${8|small,medium|}\"",
+      "  type=\"${9|text,email,password,number,search,tel,url|}\"",
+      "  ${10:helperText=\"Helper text\"}",
+      "  ${11:error={false}}",
+      "/>"
+    ],
+    "description": "Material UI TextField component"
+  },
+  "muiToggleButton": {
+    "prefix": ["muiToggleButton", "mui_toggle_button", "muitogglebutton"],
+    "body": [
+      "import { ToggleButton, ToggleButtonGroup } from \"@mui/material\";",
+      "",
+      "<ToggleButtonGroup",
+      "  value={${1:alignment}}",
+      "  exclusive",
+      "  onChange={${2:handleChange}}",
+      "  aria-label=\"${3:text alignment}\"",
+      ">",
+      "  <ToggleButton value=\"${4:left}\" aria-label=\"${5:left aligned}\">",
+      "    ${6:Left}",
+      "  </ToggleButton>",
+      "  <ToggleButton value=\"${7:center}\" aria-label=\"${8:centered}\">",
+      "    ${9:Center}",
+      "  </ToggleButton>",
+      "  <ToggleButton value=\"${10:right}\" aria-label=\"${11:right aligned}\">",
+      "    ${12:Right}",
+      "  </ToggleButton>",
+      "</ToggleButtonGroup>"
+    ],
+    "description": "Material UI ToggleButton with ToggleButtonGroup"
+  },
+  "muiTooltip": {
+    "prefix": ["muiTooltip", "mui_tooltip", "muitooltip"],
+    "body": [
+      "import { Tooltip, IconButton } from \"@mui/material\";",
+      "import { Delete } from \"@mui/icons-material\";",
+      "",
+      "<Tooltip title=\"${1:Delete}\" placement=\"${2|top,bottom,left,right|}\">",
+      "  <IconButton>",
+      "    <Delete />",
+      "  </IconButton>",
+      "</Tooltip>"
+    ],
+    "description": "Material UI Tooltip component"
+  },
+  "muiTypography": {
+    "prefix": ["muiTypography", "mui_typography", "muitypography"],
+    "body": [
+      "import { Typography } from \"@mui/material\";",
+      "",
+      "<Typography",
+      "  variant=\"${1|h1,h2,h3,h4,h5,h6,subtitle1,subtitle2,body1,body2,caption,button,overline|}\"",
+      "  component=\"${2|h1,h2,h3,h4,h5,h6,p,span,div|}\"",
+      "  color=\"${3|text.primary,text.secondary,primary,secondary,error,warning,info,success|}\"",
+      "  align=\"${4|inherit,left,center,right,justify|}\"",
+      "  gutterBottom={${5:false}}",
+      ">",
+      "  ${6:Typography content}",
+      "</Typography>"
+    ],
+    "description": "Material UI Typography component"
+  }
+}
