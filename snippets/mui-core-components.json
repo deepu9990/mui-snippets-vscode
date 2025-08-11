@@ -1,30 +1,36 @@
 {
   "muiAlert": {
-    "prefix": ["muiAlert", "mui_alert", "muialert"],
+    "prefix": [
+      "muiAlert",
+      "mui_alert",
+      "muialert"
+    ],
     "body": [
-      "import { Alert } from \"@mui/material\";",
-      "",
       "<Alert severity=\"${1|info,warning,error,success|}\" ${2:onClose={() => {}}}>${3:Alert message}</Alert>"
     ],
-    "description": "Material UI Alert component with severity and close action"
+    "description": "Material UI Alert component (import: Alert from @mui/material)"
   },
   "muiAlertTitle": {
-    "prefix": ["muiAlertTitle", "mui_alert_title", "muialerttitle"],
+    "prefix": [
+      "muiAlertTitle",
+      "mui_alert_title",
+      "muialerttitle"
+    ],
     "body": [
-      "import { Alert, AlertTitle } from \"@mui/material\";",
-      "",
       "<Alert severity=\"${1|info,warning,error,success|}\">",
       "  <AlertTitle>${2:Title}</AlertTitle>",
       "  ${3:Alert message content}",
       "</Alert>"
     ],
-    "description": "Material UI Alert with AlertTitle"
+    "description": "Material UI Alert with AlertTitle (import: Alert, AlertTitle from @mui/material)"
   },
   "muiAutocomplete": {
-    "prefix": ["muiAutocomplete", "mui_autocomplete", "muiautocomplete"],
+    "prefix": [
+      "muiAutocomplete",
+      "mui_autocomplete",
+      "muiautocomplete"
+    ],
     "body": [
-      "import { Autocomplete, TextField } from \"@mui/material\";",
-      "",
       "<Autocomplete",
       "  disablePortal",
       "  options={${1:options}}",
@@ -33,47 +39,54 @@
       "  onChange={(event, value) => {${4:// Handle change}}}",
       "/>"
     ],
-    "description": "Material UI Autocomplete with TextField"
+    "description": "Material UI Autocomplete with TextField (check required imports)"
   },
   "muiAvatar": {
-    "prefix": ["muiAvatar", "mui_avatar", "muiavatar"],
+    "prefix": [
+      "muiAvatar",
+      "mui_avatar",
+      "muiavatar"
+    ],
     "body": [
-      "import { Avatar } from \"@mui/material\";",
-      "",
       "<Avatar alt=\"${1:Name}\" src=\"${2:/path/to/image.jpg}\" sx={{ width: ${3:56}, height: ${4:56} }} />"
     ],
-    "description": "Material UI Avatar component"
+    "description": "Material UI Avatar component (check required imports)"
   },
   "muiAvatarGroup": {
-    "prefix": ["muiAvatarGroup", "mui_avatar_group", "muiavatargroup"],
+    "prefix": [
+      "muiAvatarGroup",
+      "mui_avatar_group",
+      "muiavatargroup"
+    ],
     "body": [
-      "import { Avatar, AvatarGroup } from \"@mui/material\";",
-      "",
       "<AvatarGroup max={${1:4}}>",
       "  <Avatar alt=\"${2:Name1}\" src=\"${3:/path/to/image1.jpg}\" />",
       "  <Avatar alt=\"${4:Name2}\" src=\"${5:/path/to/image2.jpg}\" />",
       "  <Avatar alt=\"${6:Name3}\" src=\"${7:/path/to/image3.jpg}\" />",
       "</AvatarGroup>"
     ],
-    "description": "Material UI AvatarGroup component"
+    "description": "Material UI AvatarGroup component (check required imports)"
   },
   "muiBadge": {
-    "prefix": ["muiBadge", "mui_badge", "muibadge"],
+    "prefix": [
+      "muiBadge",
+      "mui_badge",
+      "muibadge"
+    ],
     "body": [
-      "import { Badge } from \"@mui/material\";",
-      "",
       "<Badge badgeContent={${1:4}} color=\"${2|primary,secondary,error,info,success,warning|}\">",
       "  ${3:<!-- Content -->}",
       "</Badge>"
     ],
-    "description": "Material UI Badge component"
+    "description": "Material UI Badge component (check required imports)"
   },
   "muiBottomNavigation": {
-    "prefix": ["muiBottomNavigation", "mui_bottom_navigation", "muibottomnavigation"],
+    "prefix": [
+      "muiBottomNavigation",
+      "mui_bottom_navigation",
+      "muibottomnavigation"
+    ],
     "body": [
-      "import { BottomNavigation, BottomNavigationAction } from \"@mui/material\";",
-      "import { Home, Favorite, LocationOn } from \"@mui/icons-material\";",
-      "",
       "<BottomNavigation",
       "  showLabels",
       "  value={${1:value}}",
@@ -86,13 +99,15 @@
       "  <BottomNavigationAction label=\"${5:Nearby}\" icon={<LocationOn />} />",
       "</BottomNavigation>"
     ],
-    "description": "Material UI BottomNavigation with actions"
+    "description": "Material UI BottomNavigation with actions (check required imports)"
   },
   "muiBreadcrumbs": {
-    "prefix": ["muiBreadcrumbs", "mui_breadcrumbs", "muibreadcrumbs"],
+    "prefix": [
+      "muiBreadcrumbs",
+      "mui_breadcrumbs",
+      "muibreadcrumbs"
+    ],
     "body": [
-      "import { Breadcrumbs, Link, Typography } from \"@mui/material\";",
-      "",
       "<Breadcrumbs aria-label=\"breadcrumb\">",
       "  <Link underline=\"hover\" color=\"inherit\" href=\"${1:/}\">",
       "    ${2:Home}",
@@ -103,13 +118,15 @@
       "  <Typography color=\"text.primary\">${5:Current Page}</Typography>",
       "</Breadcrumbs>"
     ],
-    "description": "Material UI Breadcrumbs navigation"
+    "description": "Material UI Breadcrumbs navigation (check required imports)"
   },
   "muiButton": {
-    "prefix": ["muiButton", "mui_button", "muibutton"],
+    "prefix": [
+      "muiButton",
+      "mui_button",
+      "muibutton"
+    ],
     "body": [
-      "import { Button } from \"@mui/material\";",
-      "",
       "<Button",
       "  variant=\"${1|text,contained,outlined|}\"",
       "  color=\"${2|primary,secondary,error,info,success,warning|}\"",
@@ -120,26 +137,30 @@
       "  ${6:Button Text}",
       "</Button>"
     ],
-    "description": "Material UI Button component with all props"
+    "description": "Material UI Button component with all props (check required imports)"
   },
   "muiButtonGroup": {
-    "prefix": ["muiButtonGroup", "mui_button_group", "muibuttongroup"],
+    "prefix": [
+      "muiButtonGroup",
+      "mui_button_group",
+      "muibuttongroup"
+    ],
     "body": [
-      "import { ButtonGroup, Button } from \"@mui/material\";",
-      "",
       "<ButtonGroup variant=\"${1|text,contained,outlined|}\" aria-label=\"${2:outlined button group}\">",
       "  <Button onClick={${3:() => handleClick()}}>${4:One}</Button>",
       "  <Button onClick={${5:() => handleClick()}}>${6:Two}</Button>",
       "  <Button onClick={${7:() => handleClick()}}>${8:Three}</Button>",
       "</ButtonGroup>"
     ],
-    "description": "Material UI ButtonGroup component"
+    "description": "Material UI ButtonGroup component (check required imports)"
   },
   "muiCard": {
-    "prefix": ["muiCard", "mui_card", "muicard"],
+    "prefix": [
+      "muiCard",
+      "mui_card",
+      "muicard"
+    ],
     "body": [
-      "import { Card, CardContent, CardActions, Button, Typography } from \"@mui/material\";",
-      "",
       "<Card sx={{ maxWidth: ${1:345} }}>",
       "  <CardContent>",
       "    <Typography gutterBottom variant=\"h5\" component=\"div\">",
@@ -155,13 +176,15 @@
       "  </CardActions>",
       "</Card>"
     ],
-    "description": "Material UI Card with content and actions"
+    "description": "Material UI Card with content and actions (check required imports)"
   },
   "muiCardMedia": {
-    "prefix": ["muiCardMedia", "mui_card_media", "muicardmedia"],
+    "prefix": [
+      "muiCardMedia",
+      "mui_card_media",
+      "muicardmedia"
+    ],
     "body": [
-      "import { Card, CardMedia, CardContent, Typography } from \"@mui/material\";",
-      "",
       "<Card sx={{ maxWidth: ${1:345} }}>",
       "  <CardMedia",
       "    sx={{ height: ${2:140} }}",
@@ -178,13 +201,15 @@
       "  </CardContent>",
       "</Card>"
     ],
-    "description": "Material UI Card with CardMedia"
+    "description": "Material UI Card with CardMedia (check required imports)"
   },
   "muiCheckbox": {
-    "prefix": ["muiCheckbox", "mui_checkbox", "muicheckbox"],
+    "prefix": [
+      "muiCheckbox",
+      "mui_checkbox",
+      "muicheckbox"
+    ],
     "body": [
-      "import { Checkbox, FormControlLabel } from \"@mui/material\";",
-      "",
       "<FormControlLabel",
       "  control={",
       "    <Checkbox",
@@ -197,13 +222,15 @@
       "  label=\"${5:Checkbox Label}\"",
       "/>"
     ],
-    "description": "Material UI Checkbox with FormControlLabel"
+    "description": "Material UI Checkbox with FormControlLabel (check required imports)"
   },
   "muiChip": {
-    "prefix": ["muiChip", "mui_chip", "muichip"],
+    "prefix": [
+      "muiChip",
+      "mui_chip",
+      "muichip"
+    ],
     "body": [
-      "import { Chip } from \"@mui/material\";",
-      "",
       "<Chip",
       "  label=\"${1:Chip Label}\"",
       "  variant=\"${2|filled,outlined|}\"",
@@ -213,13 +240,15 @@
       "  ${6:onClick={() => {}}}",
       "/>"
     ],
-    "description": "Material UI Chip component"
+    "description": "Material UI Chip component (check required imports)"
   },
   "muiCircularProgress": {
-    "prefix": ["muiCircularProgress", "mui_circular_progress", "muicircularprogress"],
+    "prefix": [
+      "muiCircularProgress",
+      "mui_circular_progress",
+      "muicircularprogress"
+    ],
     "body": [
-      "import { CircularProgress } from \"@mui/material\";",
-      "",
       "<CircularProgress",
       "  color=\"${1|primary,secondary,error,info,success,warning,inherit|}\"",
       "  size={${2:40}}",
@@ -227,13 +256,15 @@
       "  ${4:variant=\"determinate\"}",
       "/>"
     ],
-    "description": "Material UI CircularProgress component"
+    "description": "Material UI CircularProgress component (check required imports)"
   },
   "muiDialog": {
-    "prefix": ["muiDialog", "mui_dialog", "muidialog"],
+    "prefix": [
+      "muiDialog",
+      "mui_dialog",
+      "muidialog"
+    ],
     "body": [
-      "import { Dialog, DialogTitle, DialogContent, DialogActions, Button, DialogContentText } from \"@mui/material\";",
-      "",
       "<Dialog",
       "  open={${1:open}}",
       "  onClose={${2:handleClose}}",
@@ -256,22 +287,26 @@
       "  </DialogActions>",
       "</Dialog>"
     ],
-    "description": "Material UI Dialog with title, content and actions"
+    "description": "Material UI Dialog with title, content and actions (check required imports)"
   },
   "muiDivider": {
-    "prefix": ["muiDivider", "mui_divider", "muidivider"],
+    "prefix": [
+      "muiDivider",
+      "mui_divider",
+      "muidivider"
+    ],
     "body": [
-      "import { Divider } from \"@mui/material\";",
-      "",
       "<Divider ${1:variant=\"middle\"} ${2:orientation=\"horizontal\"} ${3:flexItem} />"
     ],
-    "description": "Material UI Divider component"
+    "description": "Material UI Divider component (check required imports)"
   },
   "muiDrawer": {
-    "prefix": ["muiDrawer", "mui_drawer", "muidrawer"],
+    "prefix": [
+      "muiDrawer",
+      "mui_drawer",
+      "muidrawer"
+    ],
     "body": [
-      "import { Drawer, List, ListItem, ListItemButton, ListItemText } from \"@mui/material\";",
-      "",
       "<Drawer",
       "  anchor=\"${1|left,right,top,bottom|}\"",
       "  open={${2:open}}",
@@ -288,14 +323,15 @@
       "  </List>",
       "</Drawer>"
     ],
-    "description": "Material UI Drawer with list items"
+    "description": "Material UI Drawer with list items (check required imports)"
   },
   "muiFab": {
-    "prefix": ["muiFab", "mui_fab", "muifab"],
+    "prefix": [
+      "muiFab",
+      "mui_fab",
+      "muifab"
+    ],
     "body": [
-      "import { Fab } from \"@mui/material\";",
-      "import { Add } from \"@mui/icons-material\";",
-      "",
       "<Fab",
       "  color=\"${1|primary,secondary,error,info,success,warning|}\"",
       "  aria-label=\"${2:add}\"",
@@ -305,13 +341,15 @@
       "  <Add />",
       "</Fab>"
     ],
-    "description": "Material UI Floating Action Button"
+    "description": "Material UI Floating Action Button (check required imports)"
   },
   "muiFormControl": {
-    "prefix": ["muiFormControl", "mui_form_control", "muiformcontrol"],
+    "prefix": [
+      "muiFormControl",
+      "mui_form_control",
+      "muiformcontrol"
+    ],
     "body": [
-      "import { FormControl, InputLabel, Select, MenuItem } from \"@mui/material\";",
-      "",
       "<FormControl fullWidth>",
       "  <InputLabel id=\"${1:select-label}\">${2:Label}</InputLabel>",
       "  <Select",
@@ -327,13 +365,15 @@
       "  </Select>",
       "</FormControl>"
     ],
-    "description": "Material UI FormControl with Select"
+    "description": "Material UI FormControl with Select (check required imports)"
   },
   "muiGrid": {
-    "prefix": ["muiGrid", "mui_grid", "muigrid"],
+    "prefix": [
+      "muiGrid",
+      "mui_grid",
+      "muigrid"
+    ],
     "body": [
-      "import { Grid } from \"@mui/material\";",
-      "",
       "<Grid container spacing={${1:2}}>",
       "  <Grid item xs={${2:12}} sm={${3:6}} md={${4:4}}>",
       "    ${5:<!-- Content 1 -->}",
@@ -346,14 +386,15 @@
       "  </Grid>",
       "</Grid>"
     ],
-    "description": "Material UI Grid container and items"
+    "description": "Material UI Grid container and items (check required imports)"
   },
   "muiIconButton": {
-    "prefix": ["muiIconButton", "mui_icon_button", "muiiconbutton"],
+    "prefix": [
+      "muiIconButton",
+      "mui_icon_button",
+      "muiiconbutton"
+    ],
     "body": [
-      "import { IconButton } from \"@mui/material\";",
-      "import { ${1:Favorite} } from \"@mui/icons-material\";",
-      "",
       "<IconButton",
       "  aria-label=\"${2:favorite}\"",
       "  color=\"${3|default,inherit,primary,secondary,error,info,success,warning|}\"",
@@ -363,13 +404,15 @@
       "  <${1:Favorite} />",
       "</IconButton>"
     ],
-    "description": "Material UI IconButton component"
+    "description": "Material UI IconButton component (check required imports)"
   },
   "muiLinearProgress": {
-    "prefix": ["muiLinearProgress", "mui_linear_progress", "muilinearprogress"],
+    "prefix": [
+      "muiLinearProgress",
+      "mui_linear_progress",
+      "muilinearprogress"
+    ],
     "body": [
-      "import { LinearProgress } from \"@mui/material\";",
-      "",
       "<LinearProgress",
       "  variant=\"${1|determinate,indeterminate,buffer,query|}\"",
       "  value={${2:75}}",
@@ -377,14 +420,15 @@
       "  sx={{ width: '${4:100%}' }}",
       "/>"
     ],
-    "description": "Material UI LinearProgress component"
+    "description": "Material UI LinearProgress component (check required imports)"
   },
   "muiList": {
-    "prefix": ["muiList", "mui_list", "muilist"],
+    "prefix": [
+      "muiList",
+      "mui_list",
+      "muilist"
+    ],
     "body": [
-      "import { List, ListItem, ListItemButton, ListItemIcon, ListItemText } from \"@mui/material\";",
-      "import { Inbox, Drafts } from \"@mui/icons-material\";",
-      "",
       "<List>",
       "  <ListItem disablePadding>",
       "    <ListItemButton>",
@@ -404,13 +448,15 @@
       "  </ListItem>",
       "</List>"
     ],
-    "description": "Material UI List with icons and text"
+    "description": "Material UI List with icons and text (check required imports)"
   },
   "muiMenu": {
-    "prefix": ["muiMenu", "mui_menu", "muimenu"],
+    "prefix": [
+      "muiMenu",
+      "mui_menu",
+      "muimenu"
+    ],
     "body": [
-      "import { Menu, MenuItem } from \"@mui/material\";",
-      "",
       "<Menu",
       "  id=\"${1:basic-menu}\"",
       "  anchorEl={${2:anchorEl}}",
@@ -425,13 +471,15 @@
       "  <MenuItem onClick={${4:handleClose}}>${8:Logout}</MenuItem>",
       "</Menu>"
     ],
-    "description": "Material UI Menu with MenuItems"
+    "description": "Material UI Menu with MenuItems (check required imports)"
   },
   "muiPagination": {
-    "prefix": ["muiPagination", "mui_pagination", "muipagination"],
+    "prefix": [
+      "muiPagination",
+      "mui_pagination",
+      "muipagination"
+    ],
     "body": [
-      "import { Pagination } from \"@mui/material\";",
-      "",
       "<Pagination",
       "  count={${1:10}}",
       "  page={${2:page}}",
@@ -443,13 +491,15 @@
       "  showLastButton",
       "/>"
     ],
-    "description": "Material UI Pagination component"
+    "description": "Material UI Pagination component (check required imports)"
   },
   "muiRadio": {
-    "prefix": ["muiRadio", "mui_radio", "muiradio"],
+    "prefix": [
+      "muiRadio",
+      "mui_radio",
+      "muiradio"
+    ],
     "body": [
-      "import { Radio, RadioGroup, FormControlLabel, FormControl, FormLabel } from \"@mui/material\";",
-      "",
       "<FormControl>",
       "  <FormLabel id=\"${1:radio-buttons-group-label}\">${2:Label}</FormLabel>",
       "  <RadioGroup",
@@ -464,13 +514,15 @@
       "  </RadioGroup>",
       "</FormControl>"
     ],
-    "description": "Material UI Radio with RadioGroup"
+    "description": "Material UI Radio with RadioGroup (check required imports)"
   },
   "muiRating": {
-    "prefix": ["muiRating", "mui_rating", "muirating"],
+    "prefix": [
+      "muiRating",
+      "mui_rating",
+      "muirating"
+    ],
     "body": [
-      "import { Rating } from \"@mui/material\";",
-      "",
       "<Rating",
       "  name=\"${1:simple-controlled}\"",
       "  value={${2:value}}",
@@ -482,13 +534,15 @@
       "  readOnly={${6:false}}",
       "/>"
     ],
-    "description": "Material UI Rating component"
+    "description": "Material UI Rating component (check required imports)"
   },
   "muiSelect": {
-    "prefix": ["muiSelect", "mui_select", "muiselect"],
+    "prefix": [
+      "muiSelect",
+      "mui_select",
+      "muiselect"
+    ],
     "body": [
-      "import { Select, MenuItem, FormControl, InputLabel } from \"@mui/material\";",
-      "",
       "<FormControl fullWidth>",
       "  <InputLabel id=\"${1:select-label}\">${2:Label}</InputLabel>",
       "  <Select",
@@ -504,13 +558,15 @@
       "  </Select>",
       "</FormControl>"
     ],
-    "description": "Material UI Select with options"
+    "description": "Material UI Select with options (check required imports)"
   },
   "muiSkeleton": {
-    "prefix": ["muiSkeleton", "mui_skeleton", "muiskeleton"],
+    "prefix": [
+      "muiSkeleton",
+      "mui_skeleton",
+      "muiskeleton"
+    ],
     "body": [
-      "import { Skeleton } from \"@mui/material\";",
-      "",
       "<Skeleton",
       "  variant=\"${1|text,circular,rectangular,rounded|}\"",
       "  width={${2:210}}",
@@ -518,13 +574,15 @@
       "  animation=\"${4|pulse,wave,false|}\"",
       "/>"
     ],
-    "description": "Material UI Skeleton loading component"
+    "description": "Material UI Skeleton loading component (check required imports)"
   },
   "muiSlider": {
-    "prefix": ["muiSlider", "mui_slider", "muislider"],
+    "prefix": [
+      "muiSlider",
+      "mui_slider",
+      "muislider"
+    ],
     "body": [
-      "import { Slider } from \"@mui/material\";",
-      "",
       "<Slider",
       "  aria-label=\"${1:Volume}\"",
       "  value={${2:value}}",
@@ -537,13 +595,15 @@
       "  color=\"${8|primary,secondary,error,info,success,warning|}\"",
       "/>"
     ],
-    "description": "Material UI Slider component"
+    "description": "Material UI Slider component (check required imports)"
   },
   "muiSnackbar": {
-    "prefix": ["muiSnackbar", "mui_snackbar", "muisnackbar"],
+    "prefix": [
+      "muiSnackbar",
+      "mui_snackbar",
+      "muisnackbar"
+    ],
     "body": [
-      "import { Snackbar, Alert } from \"@mui/material\";",
-      "",
       "<Snackbar",
       "  open={${1:open}}",
       "  autoHideDuration={${2:6000}}",
@@ -555,13 +615,15 @@
       "  </Alert>",
       "</Snackbar>"
     ],
-    "description": "Material UI Snackbar with Alert"
+    "description": "Material UI Snackbar with Alert (check required imports)"
   },
   "muiSwitch": {
-    "prefix": ["muiSwitch", "mui_switch", "muiswitch"],
+    "prefix": [
+      "muiSwitch",
+      "mui_switch",
+      "muiswitch"
+    ],
     "body": [
-      "import { Switch, FormControlLabel } from \"@mui/material\";",
-      "",
       "<FormControlLabel",
       "  control={",
       "    <Switch",
@@ -574,13 +636,15 @@
       "  label=\"${5:Switch Label}\"",
       "/>"
     ],
-    "description": "Material UI Switch with FormControlLabel"
+    "description": "Material UI Switch with FormControlLabel (check required imports)"
   },
   "muiTabs": {
-    "prefix": ["muiTabs", "mui_tabs", "muitabs"],
+    "prefix": [
+      "muiTabs",
+      "mui_tabs",
+      "muitabs"
+    ],
     "body": [
-      "import { Tabs, Tab, Box } from \"@mui/material\";",
-      "",
       "<Box sx={{ width: '100%' }}>",
       "  <Tabs",
       "    value={${1:value}}",
@@ -595,13 +659,15 @@
       "  </Tabs>",
       "</Box>"
     ],
-    "description": "Material UI Tabs component"
+    "description": "Material UI Tabs component (check required imports)"
   },
   "muiTextField": {
-    "prefix": ["muiTextField", "mui_text_field", "muitextfield"],
+    "prefix": [
+      "muiTextField",
+      "mui_text_field",
+      "muitextfield"
+    ],
     "body": [
-      "import { TextField } from \"@mui/material\";",
-      "",
       "<TextField",
       "  id=\"${1:outlined-basic}\"",
       "  label=\"${2:Label}\"",
@@ -616,13 +682,15 @@
       "  ${11:error={false}}",
       "/>"
     ],
-    "description": "Material UI TextField component"
+    "description": "Material UI TextField component (check required imports)"
   },
   "muiToggleButton": {
-    "prefix": ["muiToggleButton", "mui_toggle_button", "muitogglebutton"],
+    "prefix": [
+      "muiToggleButton",
+      "mui_toggle_button",
+      "muitogglebutton"
+    ],
     "body": [
-      "import { ToggleButton, ToggleButtonGroup } from \"@mui/material\";",
-      "",
       "<ToggleButtonGroup",
       "  value={${1:alignment}}",
       "  exclusive",
@@ -640,27 +708,30 @@
       "  </ToggleButton>",
       "</ToggleButtonGroup>"
     ],
-    "description": "Material UI ToggleButton with ToggleButtonGroup"
+    "description": "Material UI ToggleButton with ToggleButtonGroup (check required imports)"
   },
   "muiTooltip": {
-    "prefix": ["muiTooltip", "mui_tooltip", "muitooltip"],
+    "prefix": [
+      "muiTooltip",
+      "mui_tooltip",
+      "muitooltip"
+    ],
     "body": [
-      "import { Tooltip, IconButton } from \"@mui/material\";",
-      "import { Delete } from \"@mui/icons-material\";",
-      "",
       "<Tooltip title=\"${1:Delete}\" placement=\"${2|top,bottom,left,right|}\">",
       "  <IconButton>",
       "    <Delete />",
       "  </IconButton>",
       "</Tooltip>"
     ],
-    "description": "Material UI Tooltip component"
+    "description": "Material UI Tooltip component (check required imports)"
   },
   "muiTypography": {
-    "prefix": ["muiTypography", "mui_typography", "muitypography"],
+    "prefix": [
+      "muiTypography",
+      "mui_typography",
+      "muitypography"
+    ],
     "body": [
-      "import { Typography } from \"@mui/material\";",
-      "",
       "<Typography",
       "  variant=\"${1|h1,h2,h3,h4,h5,h6,subtitle1,subtitle2,body1,body2,caption,button,overline|}\"",
       "  component=\"${2|h1,h2,h3,h4,h5,h6,p,span,div|}\"",
@@ -671,6 +742,6 @@
       "  ${6:Typography content}",
       "</Typography>"
     ],
-    "description": "Material UI Typography component"
+    "description": "Material UI Typography component (check required imports)"
   }
 }

@@ -1,9 +1,11 @@
 {
   "muiDataGrid": {
-    "prefix": ["muiDataGrid", "mui_data_grid", "muidatagrid"],
+    "prefix": [
+      "muiDataGrid",
+      "mui_data_grid",
+      "muidatagrid"
+    ],
     "body": [
-      "import { DataGrid } from \"@mui/x-data-grid\";",
-      "",
       "const columns = [",
       "  { field: 'id', headerName: 'ID', width: ${1:70} },",
       "  { field: 'firstName', headerName: '${2:First name}', width: ${3:130} },",
@@ -24,13 +26,11 @@
       "      `${params.row.firstName || ''} ${params.row.lastName || ''}`,",
       "  },",
       "];",
-      "",
       "const rows = [",
       "  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },",
       "  { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },",
       "  { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },",
       "];",
-      "",
       "<DataGrid",
       "  rows={${11:rows}}",
       "  columns={columns}",
@@ -45,20 +45,21 @@
       "  sx={{ height: ${14:400}, width: '100%' }}",
       "/>"
     ],
-    "description": "Material UI DataGrid with columns, rows, and pagination"
+    "description": "Material UI DataGrid with columns, rows, and pagination (check required imports)"
   },
   "muiDataGridPro": {
-    "prefix": ["muiDataGridPro", "mui_data_grid_pro", "muidatagridpro"],
+    "prefix": [
+      "muiDataGridPro",
+      "mui_data_grid_pro",
+      "muidatagridpro"
+    ],
     "body": [
-      "import { DataGridPro } from \"@mui/x-data-grid-pro\";",
-      "",
       "const columns = [",
       "  { field: 'id', headerName: 'ID', width: 70 },",
       "  { field: 'name', headerName: '${1:Name}', width: 200 },",
       "  { field: 'category', headerName: '${2:Category}', width: 150 },",
       "  { field: 'price', headerName: '${3:Price}', type: 'number', width: 100 },",
       "];",
-      "",
       "<DataGridPro",
       "  rows={${4:rows}}",
       "  columns={columns}",
@@ -79,16 +80,15 @@
       "  sx={{ height: 600, width: '100%' }}",
       "/>"
     ],
-    "description": "Material UI DataGridPro with tree data and grouping"
+    "description": "Material UI DataGridPro with tree data and grouping (check required imports)"
   },
   "muiDatePicker": {
-    "prefix": ["muiDatePicker", "mui_date_picker", "muidatepicker"],
+    "prefix": [
+      "muiDatePicker",
+      "mui_date_picker",
+      "muidatepicker"
+    ],
     "body": [
-      "import { DatePicker } from \"@mui/x-date-pickers/DatePicker\";",
-      "import { LocalizationProvider } from \"@mui/x-date-pickers/LocalizationProvider\";",
-      "import { AdapterDateFns } from \"@mui/x-date-pickers/AdapterDateFns\";",
-      "import { TextField } from \"@mui/material\";",
-      "",
       "<LocalizationProvider dateAdapter={AdapterDateFns}>",
       "  <DatePicker",
       "    label=\"${1:Select Date}\"",
@@ -104,16 +104,15 @@
       "  />",
       "</LocalizationProvider>"
     ],
-    "description": "Material UI DatePicker with LocalizationProvider"
+    "description": "Material UI DatePicker with LocalizationProvider (check required imports)"
   },
   "muiTimePicker": {
-    "prefix": ["muiTimePicker", "mui_time_picker", "muitimepicker"],
+    "prefix": [
+      "muiTimePicker",
+      "mui_time_picker",
+      "muitimepicker"
+    ],
     "body": [
-      "import { TimePicker } from \"@mui/x-date-pickers/TimePicker\";",
-      "import { LocalizationProvider } from \"@mui/x-date-pickers/LocalizationProvider\";",
-      "import { AdapterDateFns } from \"@mui/x-date-pickers/AdapterDateFns\";",
-      "import { TextField } from \"@mui/material\";",
-      "",
       "<LocalizationProvider dateAdapter={AdapterDateFns}>",
       "  <TimePicker",
       "    label=\"${1:Select Time}\"",
@@ -126,16 +125,15 @@
       "  />",
       "</LocalizationProvider>"
     ],
-    "description": "Material UI TimePicker component"
+    "description": "Material UI TimePicker component (check required imports)"
   },
   "muiDateTimePicker": {
-    "prefix": ["muiDateTimePicker", "mui_date_time_picker", "muidatetimepicker"],
+    "prefix": [
+      "muiDateTimePicker",
+      "mui_date_time_picker",
+      "muidatetimepicker"
+    ],
     "body": [
-      "import { DateTimePicker } from \"@mui/x-date-pickers/DateTimePicker\";",
-      "import { LocalizationProvider } from \"@mui/x-date-pickers/LocalizationProvider\";",
-      "import { AdapterDateFns } from \"@mui/x-date-pickers/AdapterDateFns\";",
-      "import { TextField } from \"@mui/material\";",
-      "",
       "<LocalizationProvider dateAdapter={AdapterDateFns}>",
       "  <DateTimePicker",
       "    label=\"${1:Select Date & Time}\"",
@@ -149,16 +147,15 @@
       "  />",
       "</LocalizationProvider>"
     ],
-    "description": "Material UI DateTimePicker component"
+    "description": "Material UI DateTimePicker component (check required imports)"
   },
   "muiDateRangePicker": {
-    "prefix": ["muiDateRangePicker", "mui_date_range_picker", "muidaterangepicker"],
+    "prefix": [
+      "muiDateRangePicker",
+      "mui_date_range_picker",
+      "muidaterangepicker"
+    ],
     "body": [
-      "import { DateRangePicker } from \"@mui/x-date-pickers-pro/DateRangePicker\";",
-      "import { LocalizationProvider } from \"@mui/x-date-pickers/LocalizationProvider\";",
-      "import { AdapterDateFns } from \"@mui/x-date-pickers/AdapterDateFns\";",
-      "import { TextField, Box } from \"@mui/material\";",
-      "",
       "<LocalizationProvider dateAdapter={AdapterDateFns}>",
       "  <DateRangePicker",
       "    startText=\"${1:Check-in}\"",
@@ -175,14 +172,15 @@
       "  />",
       "</LocalizationProvider>"
     ],
-    "description": "Material UI DateRangePicker (Pro) component"
+    "description": "Material UI DateRangePicker (Pro) component (check required imports)"
   },
   "muiTreeView": {
-    "prefix": ["muiTreeView", "mui_tree_view", "muitreeview"],
+    "prefix": [
+      "muiTreeView",
+      "mui_tree_view",
+      "muitreeview"
+    ],
     "body": [
-      "import { TreeView, TreeItem } from \"@mui/x-tree-view\";",
-      "import { ExpandMore, ChevronRight } from \"@mui/icons-material\";",
-      "",
       "<TreeView",
       "  aria-label=\"${1:file system navigator}\"",
       "  defaultCollapseIcon={<ExpandMore />}",
@@ -204,13 +202,15 @@
       "  </TreeItem>",
       "</TreeView>"
     ],
-    "description": "Material UI TreeView with TreeItem components"
+    "description": "Material UI TreeView with TreeItem components (check required imports)"
   },
   "muiAutocompleteMultiple": {
-    "prefix": ["muiAutocompleteMultiple", "mui_autocomplete_multiple", "muiautocompletemultiple"],
+    "prefix": [
+      "muiAutocompleteMultiple",
+      "mui_autocomplete_multiple",
+      "muiautocompletemultiple"
+    ],
     "body": [
-      "import { Autocomplete, TextField, Chip } from \"@mui/material\";",
-      "",
       "<Autocomplete",
       "  multiple",
       "  id=\"${1:tags-filled}\"",
@@ -234,13 +234,15 @@
       "  )}",
       "/>"
     ],
-    "description": "Material UI Autocomplete with multiple selection and chips"
+    "description": "Material UI Autocomplete with multiple selection and chips (check required imports)"
   },
   "muiDataGridToolbar": {
-    "prefix": ["muiDataGridToolbar", "mui_data_grid_toolbar", "muidatagridtoolbar"],
+    "prefix": [
+      "muiDataGridToolbar",
+      "mui_data_grid_toolbar",
+      "muidatagridtoolbar"
+    ],
     "body": [
-      "import { DataGrid, GridToolbar } from \"@mui/x-data-grid\";",
-      "",
       "<DataGrid",
       "  rows={${1:rows}}",
       "  columns={${2:columns}}",
@@ -256,14 +258,15 @@
       "  sx={{ height: ${3:400}, width: '100%' }}",
       "/>"
     ],
-    "description": "Material UI DataGrid with built-in toolbar"
+    "description": "Material UI DataGrid with built-in toolbar (check required imports)"
   },
   "muiDataGridCustomActions": {
-    "prefix": ["muiDataGridCustomActions", "mui_data_grid_custom_actions", "muidatagridcustomactions"],
+    "prefix": [
+      "muiDataGridCustomActions",
+      "mui_data_grid_custom_actions",
+      "muidatagridcustomactions"
+    ],
     "body": [
-      "import { DataGrid, GridActionsCellItem } from \"@mui/x-data-grid\";",
-      "import { Edit, Delete, Visibility } from \"@mui/icons-material\";",
-      "",
       "const columns = [",
       "  { field: 'id', headerName: 'ID', width: 70 },",
       "  { field: 'name', headerName: '${1:Name}', width: 200 },",
@@ -298,13 +301,12 @@
       "    },",
       "  },",
       "];",
-      "",
       "<DataGrid",
       "  rows={${6:rows}}",
       "  columns={columns}",
       "  sx={{ height: 400, width: '100%' }}",
       "/>"
     ],
-    "description": "Material UI DataGrid with custom action buttons"
+    "description": "Material UI DataGrid with custom action buttons (check required imports)"
   }
 }

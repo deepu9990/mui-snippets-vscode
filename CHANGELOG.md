@@ -2,6 +2,17 @@
 
 All notable changes to the MUI Snippets Pro extension will be documented in this file.
 
+## [1.0.1] - 2024-08-11
+
+### 🔧 Fixed
+- **Import Placement Issue**: Removed import statements from snippets to prevent them appearing inside JSX
+- **Better Developer Experience**: Snippets now contain only component code for cleaner JSX insertion
+
+### 📝 Improved
+- Added import guide in README with common import patterns
+- Updated examples to show proper import usage
+- Enhanced descriptions to indicate required imports
+
 ## [1.0.0] - 2024-08-11
 
 ### 🎉 Initial Release

@@ -1,36 +1,41 @@
 {
   "muiUseTheme": {
-    "prefix": ["muiUseTheme", "mui_use_theme", "muiusetheme"],
+    "prefix": [
+      "muiUseTheme",
+      "mui_use_theme",
+      "muiusetheme"
+    ],
     "body": [
-      "import { useTheme } from \"@mui/material/styles\";",
-      "",
       "const theme = useTheme();",
-      "",
       "// Access theme properties:",
       "// theme.palette.primary.main",
       "// theme.spacing(2)",
       "// theme.breakpoints.up('md')",
       "// theme.typography.h1"
     ],
-    "description": "Material UI useTheme hook to access theme object"
+    "description": "Material UI useTheme hook to access theme object (check required imports)"
   },
   "muiUseMediaQuery": {
-    "prefix": ["muiUseMediaQuery", "mui_use_media_query", "muiusemediaquery"],
+    "prefix": [
+      "muiUseMediaQuery",
+      "mui_use_media_query",
+      "muiusemediaquery"
+    ],
     "body": [
-      "import { useMediaQuery, useTheme } from \"@mui/material\";",
-      "",
       "const theme = useTheme();",
       "const ${1:isMobile} = useMediaQuery(theme.breakpoints.down('${2|xs,sm,md,lg,xl|}'));",
       "const ${3:isTablet} = useMediaQuery(theme.breakpoints.between('${4:sm}', '${5:md}'));",
       "const ${6:isDesktop} = useMediaQuery(theme.breakpoints.up('${7:lg}'));"
     ],
-    "description": "Material UI useMediaQuery hook for responsive design"
+    "description": "Material UI useMediaQuery hook for responsive design (check required imports)"
   },
   "muiCreateTheme": {
-    "prefix": ["muiCreateTheme", "mui_create_theme", "muicreatetheme"],
+    "prefix": [
+      "muiCreateTheme",
+      "mui_create_theme",
+      "muicreatetheme"
+    ],
     "body": [
-      "import { createTheme, ThemeProvider } from \"@mui/material/styles\";",
-      "",
       "const theme = createTheme({",
       "  palette: {",
       "    mode: '${1|light,dark|}',",
@@ -62,23 +67,20 @@
       "    },",
       "  },",
       "});",
-      "",
       "<ThemeProvider theme={theme}>",
       "  ${14:/* Your app components */}",
       "</ThemeProvider>"
     ],
-    "description": "Material UI createTheme with ThemeProvider setup"
+    "description": "Material UI createTheme with ThemeProvider setup (check required imports)"
   },
   "muiThemeToggler": {
-    "prefix": ["muiThemeToggler", "mui_theme_toggler", "muithemetoggler"],
+    "prefix": [
+      "muiThemeToggler",
+      "mui_theme_toggler",
+      "muithemetoggler"
+    ],
     "body": [
-      "import { createTheme, ThemeProvider } from \"@mui/material/styles\";",
-      "import { IconButton } from \"@mui/material\";",
-      "import { Brightness4, Brightness7 } from \"@mui/icons-material\";",
-      "import { useState, useMemo } from \"react\";",
-      "",
       "const [darkMode, setDarkMode] = useState(${1:false});",
-      "",
       "const theme = useMemo(",
       "  () =>",
       "    createTheme({",
@@ -94,11 +96,9 @@
       "    }),",
       "  [darkMode]",
       ");",
-      "",
       "const toggleDarkMode = () => {",
       "  setDarkMode(!darkMode);",
       "};",
-      "",
       "<ThemeProvider theme={theme}>",
       "  <IconButton onClick={toggleDarkMode} color=\"inherit\">",
       "    {darkMode ? <Brightness7 /> : <Brightness4 />}",
@@ -106,14 +106,15 @@
       "  ${4:/* Your app components */}",
       "</ThemeProvider>"
     ],
-    "description": "Material UI dark/light theme toggler with state management"
+    "description": "Material UI dark/light theme toggler with state management (check required imports)"
   },
   "muiStyled": {
-    "prefix": ["muiStyled", "mui_styled", "muistyled"],
+    "prefix": [
+      "muiStyled",
+      "mui_styled",
+      "muistyled"
+    ],
     "body": [
-      "import { styled } from \"@mui/material/styles\";",
-      "import { ${1:Box} } from \"@mui/material\";",
-      "",
       "const ${2:StyledComponent} = styled(${1:Box})(({ theme }) => ({",
       "  ${3:padding: theme.spacing(2),}",
       "  ${4:backgroundColor: theme.palette.primary.main,}",
@@ -126,10 +127,14 @@
       "  },}",
       "}));"
     ],
-    "description": "Material UI styled component with theme access"
+    "description": "Material UI styled component with theme access (check required imports)"
   },
   "muiSx": {
-    "prefix": ["muiSx", "mui_sx", "muisx"],
+    "prefix": [
+      "muiSx",
+      "mui_sx",
+      "muisx"
+    ],
     "body": [
       "sx={{",
       "  ${1:p: 2,} // padding",
@@ -146,17 +151,17 @@
       "  },}",
       "}}"
     ],
-    "description": "Material UI sx prop with common styling patterns"
+    "description": "Material UI sx prop with common styling patterns (check required imports)"
   },
   "muiColorMode": {
-    "prefix": ["muiColorMode", "mui_color_mode", "muicolormode"],
+    "prefix": [
+      "muiColorMode",
+      "mui_color_mode",
+      "muicolormode"
+    ],
     "body": [
-      "import { useColorScheme } from \"@mui/material/styles\";",
-      "import { Button } from \"@mui/material\";",
-      "",
       "function ColorModeToggle() {",
       "  const { mode, setMode } = useColorScheme();",
-      "",
       "  return (",
       "    <Button",
       "      onClick={() => {",
@@ -168,26 +173,31 @@
       "  );",
       "}"
     ],
-    "description": "Material UI color scheme toggle using useColorScheme"
+    "description": "Material UI color scheme toggle using useColorScheme (check required imports)"
   },
   "muiCssBaseline": {
-    "prefix": ["muiCssBaseline", "mui_css_baseline", "muicssbaseline"],
+    "prefix": [
+      "muiCssBaseline",
+      "mui_css_baseline",
+      "muicssbaseline"
+    ],
     "body": [
-      "import { CssBaseline, ThemeProvider, createTheme } from \"@mui/material\";",
-      "",
       "const theme = createTheme({",
       "  // Your theme configuration",
       "});",
-      "",
       "<ThemeProvider theme={theme}>",
       "  <CssBaseline />",
       "  ${1:/* Your app components */}",
       "</ThemeProvider>"
     ],
-    "description": "Material UI CssBaseline for consistent CSS reset"
+    "description": "Material UI CssBaseline for consistent CSS reset (check required imports)"
   },
   "muiResponsiveValue": {
-    "prefix": ["muiResponsiveValue", "mui_responsive_value", "muiresponsivevalue"],
+    "prefix": [
+      "muiResponsiveValue",
+      "mui_responsive_value",
+      "muiresponsivevalue"
+    ],
     "body": [
       "// Responsive values in sx prop",
       "sx={{",
@@ -204,16 +214,15 @@
       "  },",
       "}}"
     ],
-    "description": "Material UI responsive values for breakpoints in sx prop"
+    "description": "Material UI responsive values for breakpoints in sx prop (check required imports)"
   },
   "muiLocalizationProvider": {
-    "prefix": ["muiLocalizationProvider", "mui_localization_provider", "muilocalizationprovider"],
+    "prefix": [
+      "muiLocalizationProvider",
+      "mui_localization_provider",
+      "muilocalizationprovider"
+    ],
     "body": [
-      "import { LocalizationProvider } from \"@mui/x-date-pickers/LocalizationProvider\";",
-      "import { AdapterDateFns } from \"@mui/x-date-pickers/AdapterDateFns\";",
-      "import { DatePicker } from \"@mui/x-date-pickers/DatePicker\";",
-      "import { TextField } from \"@mui/material\";",
-      "",
       "<LocalizationProvider dateAdapter={AdapterDateFns}>",
       "  <DatePicker",
       "    label=\"${1:Select Date}\"",
@@ -223,13 +232,15 @@
       "  />",
       "</LocalizationProvider>"
     ],
-    "description": "Material UI LocalizationProvider for date pickers"
+    "description": "Material UI LocalizationProvider for date pickers (check required imports)"
   },
   "muiGlobalStyles": {
-    "prefix": ["muiGlobalStyles", "mui_global_styles", "muiglobalstyles"],
+    "prefix": [
+      "muiGlobalStyles",
+      "mui_global_styles",
+      "muiglobalstyles"
+    ],
     "body": [
-      "import { GlobalStyles } from \"@mui/material\";",
-      "",
       "<GlobalStyles",
       "  styles={{",
       "    body: {",
@@ -243,13 +254,15 @@
       "  }}",
       "/>"
     ],
-    "description": "Material UI GlobalStyles component for global CSS"
+    "description": "Material UI GlobalStyles component for global CSS (check required imports)"
   },
   "muiContainer": {
-    "prefix": ["muiContainer", "mui_container", "muicontainer"],
+    "prefix": [
+      "muiContainer",
+      "mui_container",
+      "muicontainer"
+    ],
     "body": [
-      "import { Container } from \"@mui/material\";",
-      "",
       "<Container",
       "  maxWidth=\"${1|xs,sm,md,lg,xl,false|}\"",
       "  fixed={${2:false}}",
@@ -262,13 +275,15 @@
       "  ${6:/* Container content */}",
       "</Container>"
     ],
-    "description": "Material UI Container component with responsive maxWidth"
+    "description": "Material UI Container component with responsive maxWidth (check required imports)"
   },
   "muiStack": {
-    "prefix": ["muiStack", "mui_stack", "muistack"],
+    "prefix": [
+      "muiStack",
+      "mui_stack",
+      "muistack"
+    ],
     "body": [
-      "import { Stack } from \"@mui/material\";",
-      "",
       "<Stack",
       "  direction=\"${1|row,column,row-reverse,column-reverse|}\"",
       "  spacing={${2:2}}",
@@ -281,6 +296,6 @@
       "  ${6:/* Stack children */}",
       "</Stack>"
     ],
-    "description": "Material UI Stack component for one-dimensional layouts"
+    "description": "Material UI Stack component for one-dimensional layouts (check required imports)"
   }
 }

@@ -1,20 +1,18 @@
 {
   "muiAppBarWithDrawer": {
-    "prefix": ["muiAppBarWithDrawer", "mui_app_bar_with_drawer", "muiappbarwithdrawer"],
+    "prefix": [
+      "muiAppBarWithDrawer",
+      "mui_app_bar_with_drawer",
+      "muiappbarwithdrawer"
+    ],
     "body": [
-      "import { AppBar, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText } from \"@mui/material\";",
-      "import { Menu as MenuIcon } from \"@mui/icons-material\";",
-      "import { useState } from \"react\";",
-      "",
       "const [drawerOpen, setDrawerOpen] = useState(false);",
-      "",
       "const toggleDrawer = (open) => (event) => {",
       "  if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {",
       "    return;",
       "  }",
       "  setDrawerOpen(open);",
       "};",
-      "",
       "<>",
       "  <AppBar position=\"static\">",
       "    <Toolbar>",
@@ -46,25 +44,22 @@
       "  </Drawer>",
       "</>"
     ],
-    "description": "Material UI AppBar with responsive Drawer navigation"
+    "description": "Material UI AppBar with responsive Drawer navigation (check required imports)"
   },
   "muiResponsiveAppBar": {
-    "prefix": ["muiResponsiveAppBar", "mui_responsive_app_bar", "muiresponsiveappbar"],
+    "prefix": [
+      "muiResponsiveAppBar",
+      "mui_responsive_app_bar",
+      "muiresponsiveappbar"
+    ],
     "body": [
-      "import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Button, Box } from \"@mui/material\";",
-      "import { Menu as MenuIcon, AccountCircle } from \"@mui/icons-material\";",
-      "import { useState } from \"react\";",
-      "",
       "const [anchorEl, setAnchorEl] = useState(null);",
-      "",
       "const handleMenu = (event) => {",
       "  setAnchorEl(event.currentTarget);",
       "};",
-      "",
       "const handleClose = () => {",
       "  setAnchorEl(null);",
       "};",
-      "",
       "<AppBar position=\"static\">",
       "  <Toolbar>",
       "    <IconButton",
@@ -116,13 +111,15 @@
       "  </Toolbar>",
       "</AppBar>"
     ],
-    "description": "Responsive Material UI AppBar with mobile menu"
+    "description": "Responsive Material UI AppBar with mobile menu (check required imports)"
   },
   "muiDashboardLayout": {
-    "prefix": ["muiDashboardLayout", "mui_dashboard_layout", "muidashboardlayout"],
+    "prefix": [
+      "muiDashboardLayout",
+      "mui_dashboard_layout",
+      "muidashboardlayout"
+    ],
     "body": [
-      "import { Grid, Paper, Typography, Box } from \"@mui/material\";",
-      "",
       "<Box sx={{ flexGrow: 1, p: 3 }}>",
       "  <Typography variant=\"h4\" gutterBottom>",
       "    ${1:Dashboard}",
@@ -195,13 +192,15 @@
       "  </Grid>",
       "</Box>"
     ],
-    "description": "Material UI Dashboard layout with Grid and Paper components"
+    "description": "Material UI Dashboard layout with Grid and Paper components (check required imports)"
   },
   "muiCenteredForm": {
-    "prefix": ["muiCenteredForm", "mui_centered_form", "muicenteredform"],
+    "prefix": [
+      "muiCenteredForm",
+      "mui_centered_form",
+      "muicenteredform"
+    ],
     "body": [
-      "import { Container, Paper, TextField, Button, Typography, Box } from \"@mui/material\";",
-      "",
       "<Container component=\"main\" maxWidth=\"sm\">",
       "  <Box",
       "    sx={{",
@@ -249,13 +248,15 @@
       "  </Box>",
       "</Container>"
     ],
-    "description": "Material UI centered form with Paper container"
+    "description": "Material UI centered form with Paper container (check required imports)"
   },
   "muiStickyFooter": {
-    "prefix": ["muiStickyFooter", "mui_sticky_footer", "muistickyfooter"],
+    "prefix": [
+      "muiStickyFooter",
+      "mui_sticky_footer",
+      "muistickyfooter"
+    ],
     "body": [
-      "import { Box, Typography, Container } from \"@mui/material\";",
-      "",
       "<Box",
       "  sx={{",
       "    display: 'flex',",
@@ -290,13 +291,15 @@
       "  </Box>",
       "</Box>"
     ],
-    "description": "Material UI sticky footer layout"
+    "description": "Material UI sticky footer layout (check required imports)"
   },
   "muiCardGrid": {
-    "prefix": ["muiCardGrid", "mui_card_grid", "muicardgrid"],
+    "prefix": [
+      "muiCardGrid",
+      "mui_card_grid",
+      "muicardgrid"
+    ],
     "body": [
-      "import { Grid, Card, CardContent, CardMedia, Typography, CardActions, Button } from \"@mui/material\";",
-      "",
       "<Grid container spacing={4}>",
       "  {${1:items}.map((item, index) => (",
       "    <Grid item key={index} xs={12} sm={6} md={4}>",
@@ -331,16 +334,16 @@
       "  ))}",
       "</Grid>"
     ],
-    "description": "Material UI responsive card grid layout"
+    "description": "Material UI responsive card grid layout (check required imports)"
   },
   "muiSidebarLayout": {
-    "prefix": ["muiSidebarLayout", "mui_sidebar_layout", "muisidebarlayout"],
+    "prefix": [
+      "muiSidebarLayout",
+      "mui_sidebar_layout",
+      "muisidebarlayout"
+    ],
     "body": [
-      "import { Box, Drawer, Toolbar, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from \"@mui/material\";",
-      "import { Home, Settings, Person } from \"@mui/icons-material\";",
-      "",
       "const drawerWidth = ${1:240};",
-      "",
       "<Box sx={{ display: 'flex' }}>",
       "  <Drawer",
       "    variant=\"permanent\"",
@@ -389,30 +392,26 @@
       "  </Box>",
       "</Box>"
     ],
-    "description": "Material UI permanent sidebar layout"
+    "description": "Material UI permanent sidebar layout (check required imports)"
   },
   "muiStepperForm": {
-    "prefix": ["muiStepperForm", "mui_stepper_form", "muistepperform"],
+    "prefix": [
+      "muiStepperForm",
+      "mui_stepper_form",
+      "muistepperform"
+    ],
     "body": [
-      "import { Stepper, Step, StepLabel, Button, Typography, Box } from \"@mui/material\";",
-      "import { useState } from \"react\";",
-      "",
       "const steps = ${1:['Step 1', 'Step 2', 'Step 3']};",
-      "",
       "const [activeStep, setActiveStep] = useState(0);",
-      "",
       "const handleNext = () => {",
       "  setActiveStep((prevActiveStep) => prevActiveStep + 1);",
       "};",
-      "",
       "const handleBack = () => {",
       "  setActiveStep((prevActiveStep) => prevActiveStep - 1);",
       "};",
-      "",
       "const handleReset = () => {",
       "  setActiveStep(0);",
       "};",
-      "",
       "<Box sx={{ width: '100%' }}>",
       "  <Stepper activeStep={activeStep}>",
       "    {steps.map((label) => (",
@@ -452,6 +451,6 @@
       "  )}",
       "</Box>"
     ],
-    "description": "Material UI Stepper form with navigation"
+    "description": "Material UI Stepper form with navigation (check required imports)"
   }
 }

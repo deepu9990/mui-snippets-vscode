@@ -32,12 +32,15 @@ Each snippet supports three different prefix formats:
 
 Simply start typing any of these formats and VS Code will show the available snippets.
 
+**Note**: Snippets contain only the component code. You need to add the necessary import statements at the top of your file.
+
 ### Quick Examples
 
 #### Basic Button
 Type: `muiButton` → Press Tab
 ```tsx
-import { Button } from "@mui/material";
+// Add this import at the top of your file:
+// import { Button } from "@mui/material";
 
 <Button
   variant="contained"
@@ -53,7 +56,8 @@ import { Button } from "@mui/material";
 #### Responsive Grid
 Type: `muiGrid` → Press Tab
 ```tsx
-import { Grid } from "@mui/material";
+// Add this import at the top of your file:
+// import { Grid } from "@mui/material";
 
 <Grid container spacing={2}>
   <Grid item xs={12} sm={6} md={4}>
@@ -71,10 +75,44 @@ import { Grid } from "@mui/material";
 #### Theme Hook
 Type: `muiUseTheme` → Press Tab
 ```tsx
-import { useTheme } from "@mui/material/styles";
+// Add this import at the top of your file:
+// import { useTheme } from "@mui/material/styles";
 
 const theme = useTheme();
 // Access theme.palette.primary.main, theme.spacing(2), etc.
+```
+
+## 📋 **Import Guide**
+
+Since snippets only contain component code, you'll need to add imports manually. Here are the most common imports:
+
+### Core Components
+```tsx
+import {
+  Button, TextField, Card, Grid, Typography, Box,
+  Dialog, Alert, Chip, Avatar, Badge, Tabs
+} from "@mui/material";
+```
+
+### Icons
+```tsx
+import {
+  Home, Menu, Close, Add, Delete, Edit, 
+  Favorite, Search, Settings
+} from "@mui/icons-material";
+```
+
+### MUI X Components
+```tsx
+import { DataGrid } from "@mui/x-data-grid";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+```
+
+### Styling & Theming
+```tsx
+import { useTheme } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 ```
 
 ## � Available Snippets
