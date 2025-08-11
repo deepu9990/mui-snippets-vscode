@@ -27,6 +27,7 @@
     "jsx",
     "tsx"
   ],
+  "icon": "icon.png",
   "galleryBanner": {
     "color": "#1976d2",
     "theme": "dark"
